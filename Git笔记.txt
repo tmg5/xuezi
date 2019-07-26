@@ -1,0 +1,51 @@
+﻿1.VCS系统
+      Version Control System:版本控制系统，用于存储项目中的存储、共享、合并、历史回退功能等。
+   常用VCS软件
+      VCS(2000年之前)
+      SVN(2010年之前)  集中式存储
+      GIT(2010年后)    分布式存储
+2.Git软件中的概念(重点、难点)
+     工作目录：被Git管理的项目目录
+     暂存区：  临时存放被修改文件
+     本地仓库：用于存储提交的记录
+   
+3.Git相关
+  下载网址:https://git-scm.com/
+  如何查看本地电脑是否安装Git
+   命令行直接输入Git  
+4.git使用前配置
+  git config --global  user.name 用户名
+  git config --global  user.email 邮箱名称
+  git config --list  查看所有配置
+
+5.git 管理命令
+  git init                  初始化git仓库，使用git管理当前目录(工作目录)     
+  git status                查看文件的状态(是否被跟踪，是否被修改)
+  git add 文件名称          追踪文件(放入暂存区中)
+  git commit -m 自定义说明  把暂存区中的内容提交到本地仓库
+  git log                   查看本地仓库中所有的提交记录
+  git reset --hard 编号     向本地仓库中提取信息
+  git reflog                所有的提交和恢复记录
+  git checkout 文件名称     从暂存区恢复文件          ?
+  git rm --cached 文件名称  删除暂存区的文件
+
+
+6.分支操作
+git  branch            查看所有的分支
+git branch    分支名称  创建分支
+git checkout  分支名称  切换分支
+git merge     分支名称  合并分支
+git branch -d 分支名称  删除分支
+git checkout -b 分支名称  创建分支并且切换到该分支
+
+git remote add origin https://github.com/404298029/xuezi.git
+添加一个远程仓库，并起别名(origin)
+
+git push -u origin master
+将本地仓库的master分支添加到远程仓库方法一
+
+git push 远程仓库地址  master (推荐)
+将本地仓库的master分支添加到远程仓库方法二
+
+git pull origin master --allow-unrelated-history
+合并两个独立启动仓库的历史
