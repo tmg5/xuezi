@@ -1,0 +1,12 @@
+<h1>用户列表</h1>
+<!--
+form  表单标签，用于提交到服务器(请求)
+  method: 设置请求的方法  post/get
+  action: 设置请求的url
+name:用于接收表单输入的数据
+-->
+<form method="get" action="/user/list">
+  <h2>页码:<h2><input type="text" name="pno"><hr><hr><p>
+  <h2>大小:<h2><input type="text" name="size"><hr><hr><p>
+  <input type="submit">
+</form>

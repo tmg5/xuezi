@@ -1,0 +1,15 @@
+<h1>修改用户</h1>
+<!--
+form  表单标签，用于提交到服务器(请求)
+  method: 设置请求的方法  post/get
+  action: 设置请求的url
+name:用于接收表单输入的数据
+-->
+<form method="get" action="/user/update">
+  <h2>编号:<h2><input type="text" name="uid"><hr><p>
+  <h2>邮箱:<h2><input type='text' name="email"><br>
+  <h2>手机:<h2><input type='text' name="phone"><br>
+  <h2>姓名:<h2><input type='text' name="user_name"><br>
+  <h2>性别:<h2><input type='text' name="gender"><br>
+  <input type="submit">
+</form>
